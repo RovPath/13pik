@@ -1,0 +1,8 @@
+:root{
+  --ink:#0d0d0d; --coal:#171717; --line:#2a2a2a; --bone:#ece6da; --muted:#9a958c; --red:#c4161c; --red-h:#a51217;
+  --display:"Alumni Sans",Impact,sans-serif; --font:"Commissioner",system-ui,sans-serif;
+  --h1:96px; --h2:64px; --h3:26px; --body:17px; --small:14px;
+  --r-ui:10px; --r-card:14px;
+  --wrap:1200px; --pad:24px;
+  --shadow-card:0 2px 6px rgba(0,0,0,.35),0 30px 60px -20px rgba(0,0,0,.7);
+}

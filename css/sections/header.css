@@ -1,0 +1,12 @@
+.hdr{position:relative;z-index:5;border-bottom:1px solid var(--line)}
+.hdr .wrap{height:76px;display:flex;align-items:center;gap:36px}
+.hdr__logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.hdr__logo img{width:48px;height:48px;border-radius:50%}
+.hdr__logo span{font:800 26px/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.hdr nav{display:flex;gap:26px;font-size:15px}
+.hdr nav a{text-decoration:none;color:#cfc9bd}.hdr nav a:hover{color:#fff}
+.hdr__right{margin-left:auto;display:flex;align-items:center;gap:18px}
+.hdr__tel{font-weight:600;text-decoration:none;font-size:16px}
+.hdr .btn{height:44px;padding:0 18px;font-size:15px}
+@media (max-width:980px){.hdr nav,.hdr__tel{display:none}}
+@media (max-width:480px){.hdr .btn span{display:none}.hdr .btn{padding:0 12px}}

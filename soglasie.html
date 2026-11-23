@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Согласие на обработку персональных данных — 13 Пик тату</title>
+<meta name="robots" content="noindex,follow">
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/sections/header.css">
+<link rel="stylesheet" href="css/sections/hero.css">
+<link rel="stylesheet" href="css/sections/blocks.css">
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <a class="hdr__logo" href="index.html#top"><img src="img/logo.png" alt="Логотип 13 Пик тату" width="48" height="48"><span>13 Пик</span></a>
+    <nav aria-label="Разделы"><a href="index.html#works">Работы</a><a href="index.html#masters">Мастера</a><a href="index.html#reviews">Отзывы</a><a href="index.html#studio">Студия</a><a href="index.html#contacts">Контакты</a></nav>
+    <div class="hdr__right">
+      <a class="hdr__tel" href="tel:+79881621515">+7 (988) 162-15-15</a>
+      <a class="btn btn--red" href="https://wa.me/79628661916"><img src="img/icons/whatsapp.svg" alt=""><span>Записаться</span></a>
+    </div>
+  </div>
+</header>
+<main class="doc"><div class="wrap"><h1 class="display">Согласие на обработку персональных данных</h1>
+<p>Нажимая «Принять» в уведомлении о cookie на сайте, а также отправляя сообщение в мессенджер или группу ВКонтакте по ссылкам с сайта, я свободно, своей волей и в своём интересе даю согласие ИП [ФИО владельца в дательном падеже] (ИНН [ИНН], ОГРНИП [ОГРНИП], адрес: Краснодарский край) (далее — Оператор) на обработку моих персональных данных на следующих условиях.</p>
+<ol>
+<li><b>Цели:</b> Анализ посещаемости и улучшение работы сайта (Яндекс Метрика, cookie).</li>
+<li><b>Перечень данных:</b> сведения, собираемые посредством метрических программ.</li>
+<li><b>Действия с данными:</b> сбор, запись, систематизация, накопление, хранение, уточнение, извлечение, использование, передача, блокирование, удаление, уничтожение; обработка смешанная, с использованием средств автоматизации и без них.</li>
+<li><b>Лица, обрабатывающие данные по поручению Оператора:</b> ООО «Яндекс», 119021, г. Москва, ул. Льва Толстого, д. 16 (статистика посещений).</li>
+<li><b>Срок действия:</b> до отзыва согласия, но не более 1 года с момента последнего посещения сайта.</li>
+<li><b>Отзыв:</b> согласие можно отозвать в любой момент, написав на <a href="mailto:[e-mail салона]">[e-mail салона]</a>, или кнопкой «Настройки cookie» внизу любой страницы сайта, выбрав «Только необходимые». Оператор прекращает обработку и уничтожает данные в течение 30 дней с даты получения отзыва, кроме случаев, когда закон разрешает продолжить обработку без согласия.</li>
+<li>Порядок обработки описан в Политике в отношении обработки персональных данных: <a href="https://13pik.ru/politika/">https://13pik.ru/politika/</a>.</li>
+</ol>
+</div></main>
+<footer class="ftr"><div class="wrap"><img src="img/logo.png" alt=""><span>13 Пик тату · Краснодар</span><nav class="ftr__docs"><a href="politika.html">Политика обработки персональных данных</a><a href="soglasie.html">Согласие на обработку</a><a href="javascript:cookieSettings()">Настройки cookie</a></nav></div></footer>
+<div id="ckb" class="ckb" style="display:none">
+  Мы используем файлы cookie и Яндекс Метрику, чтобы сайт работал и мы видели, какие страницы полезны. Подробнее — в <a href="politika.html#cookie">Политике обработки персональных данных</a>.
+  <div class="ckb__acts">
+    <button id="ckb-yes" class="btn btn--red">Принять</button>
+    <button id="ckb-no" class="btn btn--line">Только необходимые</button>
+  </div>
+</div>
+<script>
+(function () {
+  var K = 'cookie_consent_v1', get = function () { try { return localStorage.getItem(K); } catch (e) { return null; } };
+  function loadMetrika() {
+  }
+  function show(on) { var b = document.getElementById('ckb'); b.style.display = on ? 'block' : 'none'; document.body.style.paddingBottom = on ? (b.offsetHeight + 32) + 'px' : ''; }
+  function set(v) { try { localStorage.setItem(K, v + '|' + new Date().toISOString()); } catch (e) {} show(false); if (v === 'all') loadMetrika(); }
+  var s = get();
+  if (s && s.indexOf('all') === 0) loadMetrika(); else if (!s) show(true);
+  document.getElementById('ckb-yes').onclick = function () { set('all'); };
+  document.getElementById('ckb-no').onclick = function () { set('necessary'); };
+  window.cookieSettings = function () { try { localStorage.removeItem(K); } catch (e) {} location.reload(); }; 
+})();
+</script>
+</body>
+</html>
